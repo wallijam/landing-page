@@ -1,0 +1,123 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: #000000;
+    color: rgb(0, 255, 0);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+input.search-box {
+    flex-grow: 1;
+    background-color: #00000000;
+    color: rgb(0, 255, 0);
+    outline-width: 0px;
+    border-width: 0px;
+    margin-left: 5%;
+    font-size: 14pt;
+    font-weight: 100;
+}
+
+button.search {
+    background: #00000000;
+    color: rgb(0, 255, 0);
+    border: solid green 2px;
+    height: 30px;
+    font-size: 16px;
+    
+}
+
+header {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top {
+    flex-direction: row;
+    display: flex;
+    border-bottom: solid rgb(0, 184, 0);
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+div.search-box {
+    flex-direction: row;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+button.account {
+    background: #00000000;
+    border: none;
+}
+
+div.page {
+    flex-direction: row;
+    display: flex;
+}
+
+div.page .main-content {
+    flex-grow: 1;
+    /* background: #0059ff; */
+    padding-left: 75px;
+}
+
+div.page .sidebar {
+    width: 50px;
+    transition: 0.5s ease-out;
+    position: absolute;
+    border-right: solid rgb(0, 184, 0);
+    overflow-x: hidden;
+    height: 100%;
+    white-space: nowrap;
+}
+
+div.page .sidebar:hover {
+    width: 10%;
+    background: #000000d0;
+}
+
+.sidebar div{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+}
+.sidebar div object, img{
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar div img.github{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    padding-left: 5px; 
+}
+
+.sidebar div img.facebook{
+    width: 60px;
+    height: 60px;
+    margin-right: -5px;
+    margin-left: -5px; 
+}
+
+.sidebar div p{
+    flex-grow: 1;
+}
+
+a:visited{
+    color: #0099ff;
+}
+a{
+    color: #0099ff;
+}
