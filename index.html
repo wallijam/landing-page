@@ -5,94 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cybermate - Technological videos</title>
-    <style>
-        @keyframes zoomIn {
-            0% {
-                transform: scale(0);
-                opacity: 0;
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @keyframes zoomInDelayed {
-            0% {
-                transform: scale(0);
-                opacity: 0;
-            }
-
-            25% {
-                transform: scale(0);
-                opacity: 0;
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-    </style>
-    <style>
-        body {
-            color: #00ff00;
-            background-color: black;
-            font-family: 'Courier New', Courier, monospace
-        }
-
-        h1 {
-            animation: 0.5s ease-in-out 0s 1 zoomIn;
-            text-align: center;
-            font-weight: normal;
-        }
-
-        h3 {
-            animation: 1s ease-in-out 0s 1 zoomIn;
-            text-align: center;
-            font-weight: normal;
-        }
-
-        div.center-content {
-            animation: 1.5s ease-in-out 0s 1 zoomInDelayed;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            position: fixed;
-            align-items: center;
-            justify-content: center;
-        }
-
-        p.center {
-            text-align: center;
-        }
-
-        a:visited {
-            color: #00ff00
-        }
-
-        a {
-            color: #00ff00
-        }
-    </style>
+    <title>Cybermate</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
 </head>
 
 <body>
-    <h1>Cybermate</h1>
-    <h3>The online video platform for cyber security and technological information</h3>
-    <div class="center-content">
-        <p class="center">
-            We're still working on putting the website together. You can join us on <a
-                href="https://discord.gg/FTd8YnY">Discord</a> with a GoFundMe page coming soon!
-            <br>
-            <a href="https://www.facebook.com/cybermate.tech/">Facebook page</a> | <a href="https://github.com/cybermate-tech">GitHub</a>
-        </p>
+    <header>
+        <div class="top">
+            <h1>Cybermate</h1>
+            <div class="search-box">
+                <input class="search-box" placeholder="Search..."></input>
+                <button class="search">Search</button>
+
+            </div>
+            <button class="account">
+                <object class="account" type="image/svg+xml" data="res/account.svg" width="50" height="50"
+                    style="fill: rgb(255, 0, 0);"></object>
+            </button>
+        </div>
+    </header>
+    <div class="page">
+        <div class="sidebar">
+            <div>
+                <object data="res/Discord.svg">
+                    <h1>D</h1>
+                </object>
+                <p><a href="https://discord.gg/FTd8YnY">Discord server</a></p>
+            </div>
+            <div>
+                <img src="res/GitHub-Mark-Light-120px-plus.png" class="github"></img>
+                <p><a href="https://github.com/cybermate-tech">GitHub repo</a></p>
+            </div>
+            <div>
+                <img src="res/facebook.png" class="facebook"></img>
+                <p><a href="https://www.facebook.com/cybermate.tech/">Facebook page</a></p>
+            </div>
+        </div>
+        <div class="main-content">
+            <h3>What is CyberMate ?</h3>
+            <p>CyberMate is an online video platform for cyber security and technological information content.</p>
+            <br />
+            <h3>Why aren't the links working ?</h3>
+            <p>Because we are still working on building the website.</p>
+            <br />
+            <h3>Can I help you ?</h3>
+            <p>Of course ! You can help us by three means : <br />
+                1) Join <a href="https://discord.gg/FTd8YnY">our Discord</a> and help us code/test the website and give ideas<br />
+                2) Support us financially on our (Not available yet) GoFundMe page<br />
+                3) Just by sharing this project with people that could be interested
+            </p>
+            <br />
+            <h3>Will the project be Open Source ?</h3>
+            <p>Yes, and it already is ! You can find this web page on <a href="https://github.com/cybermate-tech">our GitHub</a> !</p>
+
+        </div>
     </div>
+
+
 </body>
 
 </html>
